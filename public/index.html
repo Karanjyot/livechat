@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id = "mario-chat">
@@ -14,8 +16,16 @@
         </div>
         <input id ="handle" type ="text" placeholder="handle"/>
         <input id ="message" type ="text" placeholder="message"/>
+        <input id ="to" type ="text" placeholder="Send to"/>
         <button id="send">Send</button>
+        <button id="save">Save</button>
+        <button id="chat">Chat</button>
+    </div>
+
+    <div id="buttonsDiv">
+        
     </div>
     <script src="index.js"></script>
+    <script src="../routes/apiroutes.js"></script>
 </body>
 </html>
